@@ -33,8 +33,3 @@ search.onclick = function () {
   var arrNameSearch = arrName.filter(checkAdult);
   render(inputValue.split(","));
 };
-
-function greet(xm) {
-  console.log(xm);
-}
-greet("wangweiwei");
