@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callbrack
+        function op(undefined){
+          arguments[0]()
+        }
+        function add(){
+          console.log(op.arguments[1] +  op.arguments[2])
+        }
+        function sub(){
+          console.log(op.arguments[1] - op.arguments[2])
+        }
+        var addRes = op(add,1,2) //3
+        var subRes = op(sub,2,1) //1
+        console.log(addRes);
+    </script>
+</body>
+</html>
