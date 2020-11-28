@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        //callbrack
-        function op(undefined){
-          arguments[0]()
-        }
-        function add(){
-          console.log(op.arguments[1] +  op.arguments[2])
-        }
-        function sub(){
-          console.log(op.arguments[1] - op.arguments[2])
-        }
-        var addRes = op(add,1,2) //3
-        var subRes = op(sub,2,1) //1
-        console.log(addRes);
+      //callbrack
+      function op(func, num1, num2) {
+        return func(num1, num2);
+      }
+      function add(num1, num2) {
+        return num1 + num2;
+      }
+      function sub(num1, num2) {
+        return num1 - num2;
+      }
+      var addRes = op(add, 1, 2); //3
+      var subRes = op(sub, 2, 1); //1
+      console.log(addRes);
+      console.log(subRes);
     </script>
-</body>
+  </body>
 </html>

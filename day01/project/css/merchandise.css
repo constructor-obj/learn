@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.seckill-list {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+}
+.slider_control_prev {
+  left: 0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.slider_control {
+  position: absolute;
+  top: 50%;
+  border-radius: 0;
+  width: 25px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #d9d9d9;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-top: -20px;
+  font-size: 20px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}

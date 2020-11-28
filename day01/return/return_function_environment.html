@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  <script>
-    //return在函数中的场景，当执行return语句的时候函数终止执行，并返回expression的值给调用程序
-    function fun(){
-      return 1;  //1
-      console.log(0);//不会执行
-    }
-    console.log(fun()); 
+  </head>
+  <body>
+    <script>
+      //return在函数中的场景，当执行return语句的时候函数终止执行，并返回expression的值给调用程序
+      function fun() {
+        return 1; //1
+        console.log(0); //不会执行
+      }
+      console.log(fun());
 
-    function fun1(){
-      console.log(0);//0 console.log()也是执行函数
-    }
-    console.log(fun1());// undefined fun()函数中并没有return 没有明确的返回语句 默认的返回一个undefined
-    //return 在javascript中是一个语句会自动的插入分号,因此return关键字和它后面的表达式之间不能有换行
-    function f(){
-        return //自动插入分号为undefined
-        1
-    }
-    console.log(f());
-  </script>
-</body>
+      function fun1() {
+        console.log(0); //0 console.log()也是执行函数
+      }
+      console.log(fun1()); // undefined fun()函数中并没有return 没有明确的返回语句 默认的返回一个undefined
+      //return 在javascript中是一个语句会自动的插入分号,因此return关键字和它后面的表达式之间不能有换行
+      function f() {
+        return; //自动插入分号为undefined
+        1;
+      }
+      console.log(f());
+    </script>
+  </body>
 </html>
