@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*回调函数就是传递一个参数化的函数，就是将这个函数作为一个参数传到另一个主函数里面去，
+    当主函数执行完成之后，再执行传进去的作为参数的函数，走这个过程的参数化的函数，就是回调函数，
+    换个说法也就是被作为参数传递到另一个函数(主函数)的那个函数叫做回调函数。
+    */
+      function title(value) {
+        //这是回调函数
+        console.log(value);
+      }
+      function main(title, value) {
+        console.log("我是主函数");
+        title(value);
+      }
+      main(title, "我是回调函数");
+    </script>
+  </body>
+</html>

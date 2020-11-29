@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="content"></div>
+    <div class="login-form">
+      <div class="form">
+        <div class="login-box">
+          <form id="formlogin" method="post" onsubmit="return false;">
+            <div class="item item-fore1">
+              <label for="loginname" class="login-label name-label"></label>
+              <input
+                id="loginname"
+                type="text"
+                class="itxt"
+                name="loginname"
+                tabindex="1"
+                _input="true"
+                autocomplete="off"
+                value=""
+                placeholder="账号"
+              />
+              <span class="clear-btn" style="display: none"></span>
+            </div>
+              <div
+                id="entry"
+                class="item item-fore2"
+                style="visibility: visible"
+              >
+                <label class="login-label pwd-label" for="nloginpwd"></label>
+                <input
+                  type="password"
+                  id="nloginpwd"
+                  name="nloginpwd"
+                  class="itxt itxt-error"
+                  tabindex="2"
+                  autocomplete="off"
+                  _input="true"
+                  placeholder="密码"
+                />
+                <span class="clear-btn" style="display: none"></span>
+                <span class="capslock" style="display: none"
+                  ><b></b></span
+                >
+              </div>
+              <div class="item item-fore5">
+                <div class="login-btn">
+                  <a
+                    href="javascript:void(0);"
+                    οnclick="loginBtn()"
+                    class="btn-img btn-entry"
+                    id="loginsubmit"
+                    tabindex="6"
+                    _submit="true"
+                    clstag="pageclick|keycount|login_pc_201804112|12"
+                    >登&nbsp;&nbsp;&nbsp;&nbsp;录</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <span>账号123 密码123</span>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

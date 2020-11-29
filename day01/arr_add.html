@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-    //
-    //   var data = [1, 2, 3, 4, 5];
-    //   var res = add(data);
-    //   console.log(res); // 15
+      //
+      //   var data = [1, 2, 3, 4, 5];
+      //   var res = add(data);
+      //   console.log(res); // 15
 
-    //forEach
-    var data = [1, 2, 3, 4, 5];
+      //forEach
+      var data = [1, 2, 3, 4, 5];
       var sum = 0;
-      function add(data){
-        data.forEach(function(value) {
-           sum+=value;
-      });
-      console.log(sum);
-      }   
+      function add(data) {
+        data.forEach(function (value) {
+          sum += value;
+        });
+        console.log(sum);
+      }
       add(data);
-    //reduce
-    var data = [1, 2, 3, 4, 5];
-    function addData(initAdd,current){
-      return initAdd + current;
-    }
-    console.log(data.reduce(addData))
+      //reduce
+      var data = [1, 2, 3, 4, 5];
+      function addData(initAdd, current) {
+        return initAdd + current;
+      }
+      console.log(data.reduce(addData));
     </script>
-</body>
+  </body>
 </html>
