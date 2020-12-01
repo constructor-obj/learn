@@ -2,71 +2,24 @@
   margin: 0;
   padding: 0;
 }
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+    "\5B8B\4F53", sans-serif;
+  color: #666;
+}
 .seckill-list {
-  position: relative;
   float: left;
   width: 800px;
   height: 100%;
-  /* overflow: hidden; */
-}
-.slider_control_prev {
-  left: 0;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-}
-.slider_control {
-  position: absolute;
-  top: 50%;
-  border-radius: 0;
-  width: 25px;
-  height: 35px;
-  line-height: 35px;
-  background-color: #d9d9d9;
-  background-color: rgba(0, 0, 0, 0.15);
-  margin-top: -20px;
-  font-size: 20px;
-  z-index: 2;
-  border: none;
-  outline: none;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-.slider_control_prev {
-  left: 0;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-}
-.slider_control {
-  position: absolute;
-  top: 50%;
-  border-radius: 0;
-  width: 25px;
-  height: 35px;
-  line-height: 35px;
-  background-color: #d9d9d9;
-  background-color: rgba(0, 0, 0, 0.15);
-  margin-top: -20px;
-  font-size: 20px;
-  z-index: 2;
-  border: none;
-  outline: none;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-button,
-input {
-  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
-    "\5B8B\4F53", sans-serif;
-}
-
-button {
-  cursor: pointer;
 }
 .seckill-list .seckill-item {
   position: relative;
   width: 200px;
-  height: 220px;
+  height: 226px;
   display: inline-block;
+  text-align: center;
 }
 .slider_item {
   height: 100%;
@@ -76,22 +29,7 @@ a {
   color: #666;
   text-decoration: none;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-user agent stylesheet a:-webkit-any-link {
-  color: -webkit-link;
-  cursor: pointer;
-  text-decoration: underline;
-}
-body {
-  -webkit-font-smoothing: antialiased;
-  background-color: #fff;
-  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
-    "\5B8B\4F53", sans-serif;
-  color: #666;
-}
+/* 分隔线 */
 .seckill-list .seckill-item:after {
   content: "";
   display: block;
@@ -113,6 +51,7 @@ body {
   );
   background: linear-gradient(180deg, white, #eeeeee, white);
 }
+/* 字体简化显示 */
 .seckill-item__name {
   font-size: 12px;
   font-weight: 400;
@@ -122,32 +61,27 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.seckill-item__name {
   width: 160px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 13px;
 }
+/* 价格表 */
 .seckill-list .seckill-item__price {
   border: 1px solid #e1251b;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 24px;
-  overflow: hidden;
   background-color: #e1251b;
-}
-.seckill-list .seckill-item__price {
-  width: 160px;
+  width: 169px;
   height: 24px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7px;
 }
-
+/* 目前价格 */
 .seckill-list .seckill-item__price .price-miaosha {
-  width: 92px;
+  width: 96px;
   height: 100%;
   text-align: center;
   color: #fff;
@@ -156,28 +90,7 @@ body {
   line-height: 22px;
   float: left;
 }
-
-.seckill-list .seckill-item__price {
-  border: 1px solid #e1251b;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  line-height: 24px;
-  overflow: hidden;
-  background-color: #e1251b;
-}
-
-.seckill-list .seckill-item__price .price-miaosha:before {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-color: transparent white transparent transparent;
-  border-style: solid;
-  border-width: 22px 8px 0 0;
-  position: absolute;
-  top: 0;
-  left: 84px;
-}
+/* 以前价格 */
 .seckill-list .seckill-item__price .price-origin {
   height: 100%;
   width: 66px;
@@ -192,6 +105,13 @@ body {
   text-decoration: line-through;
   vertical-align: top;
 }
+/* 单品购物车*/
+.price-miaosha img {
+  width: 22px;
+  height: 22px;
+  float: right;
+}
+/* 购物车 */
 .cw-icon {
   width: 130px;
   height: 34px;
@@ -199,8 +119,6 @@ body {
   text-align: center;
   line-height: 34px;
   border-color: #eee;
-}
-.cw-icon {
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -211,14 +129,6 @@ body {
   color: #e1251b;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
-}
-.cw-icon {
-  width: 130px;
-  height: 34px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 34px;
-  border-color: #eee;
 }
 .iconfont {
   font-family: iconfont, sans-serif;
@@ -242,6 +152,6 @@ body {
   text-align: center;
 }
 .yijiaru {
-  font-size: 16px;
   color: #666;
+  line-height: 0px;
 }
