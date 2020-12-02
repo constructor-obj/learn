@@ -7,17 +7,15 @@
   </head>
   <body>
     <script>
-      function log(c) {
-        //把c返回打印到控制台
-      }
-      function add(a, b) {
-        if (a < b) return a + b;
+      function noop(c, d) {
+        c + d;
         return undefined;
       }
-      var res = add(2, 1);
-      console.log(res);
+      function add(a, b) {
+        return noop(a, b);
+      }
+      var res = add(1, 2);
       undefined;
-      //undefined;
     </script>
   </body>
 </html>

@@ -124,6 +124,7 @@ a {
   z-index: 1;
   float: left;
   border: 1px solid #e3e4e5;
+  cursor: pointer;
 }
 .cw-icon a {
   color: #e1251b;
@@ -154,4 +155,5 @@ a {
 .yijiaru {
   color: #666;
   line-height: 0px;
+  display: none;
 }
